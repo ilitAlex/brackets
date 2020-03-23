@@ -10,7 +10,7 @@ In the second param there is `bracketsConfig` - the array of pairs open-closed b
 check('()', [['(', ')']]) // -> true
 check('((()))()', [['(', ')']]) // -> true
 check('())(', [['(', ')']]) // -> false
-check('([{}])', [['(', ')'], ['[', ']'], ['{', '}']]) // -> true
+check('([{}])', [['(', ')'], ['[', ']'], ['{', '}']]) //0 -> true
 check('[(])', [['(', ')'], ['[', ']']]) // -> false
 check('[]()', [['(', ')'], ['[', ']']]) // -> true
 check('[]()(', [['(', ')'], ['[', ']']]) // -> false
